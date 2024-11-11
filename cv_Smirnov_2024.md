@@ -5,16 +5,14 @@
 
 ### **Contact Information**
 
-- **Email:** mr.stassmirnoff@hotmail.com
-- **Phone:** +49 176 4345 8829
-- **GitHub:** [github.com/mrStasSmirnoff](https://github.com/mrStasSmirnoff)
-- **LinkedIn:** [linkedin.com/in/smirnov-stanislav](https://www.linkedin.com/in/smirnov-stanislav/)
+- **Email:** mr.stassmirnoff@hotmail.com **|** **Phone:** +49 176 4345 8829
+- **GitHub:** [github.com/mrStasSmirnoff](https://github.com/mrStasSmirnoff) **|** **LinkedIn:** [linkedin.com/in/smirnov-stanislav](https://www.linkedin.com/in/smirnov-stanislav/)
 
 ---
 
 ### **Summary**
 
-Senior Data Scientist with **7+ years** of experience in data analysis, machine learning, and engineering. Proven track record of leading projects from concept to deployment, driving innovation, efficiency, and growth. Expertise in developing scalable data solutions, predictive modeling, and advanced analytics in E-commerce and Fintech sectors. Proficient in Python, SQL, AWS, and Azure, with a passion for turning complex data into actionable strategies that drive business success.
+Senior Data Scientist with **7+ years** of experience leading data-driven projects from concept to deployment. Expertise in scalable machine learning solutions, predictive modeling, and advanced analytics in E-commerce and Fintech. Proficient in Python, SQL, AWS, and Azure.
 
 ---
 
@@ -24,7 +22,7 @@ Senior Data Scientist with **7+ years** of experience in data analysis, machine 
 - **Machine Learning & AI:** Regression, SVM, Decision Trees, Boosting, CNNs, LSTMs, Keras, TensorFlow, LLMs
 - **Cloud Platforms:** AWS, Azure
 - **Data Engineering:** Data Warehouse Design (including Data Vault 2.0), ETL Development
-- **Tools & Technologies:** Docker, Kubernetes, Airflow, Git, FastAPI
+- **Tools & Technologies:** Airflow, Git, FastAPI, Docker, Kubernetes,
 - **Methodologies:** Agile (Scrum), Test-Driven Development
 
 ---
@@ -40,7 +38,6 @@ Senior Data Scientist with **7+ years** of experience in data analysis, machine 
 - **Lead Engineer** for the **Dynamic Retries** project:
   - Designed and implemented a comprehensive MVP that enhanced transaction retry success rates by **25-50%**, significantly boosting client revenue.
   - Oversaw end-to-end project development, leading a cross-functional team to implement scalable solutions on **AWS**, ensuring reliability and performance.
-  - Developed robust **FastAPI endpoints** and containerized them with **Docker** for efficient deployment.
   - Mentored junior data scientists and engineers, fostering a collaborative and knowledge-sharing environment.
 - **Technologies Used:** AWS SageMaker suite, AWS MWAA, Python, Docker, FastAPI
 
@@ -49,7 +46,6 @@ Senior Data Scientist with **7+ years** of experience in data analysis, machine 
 
 - Pioneered the development of **CleverAutomations**, significantly reducing customer churn and expanding market reach:
   - **Predictive Modeling:** Led the design and implementation of ML-driven frameworks using **Python** and **AWS SageMaker**.
-  - **Automated Workflows:** Introduced automation with **AWS MWAA**, streamlining processes and enhancing scalability.
   - Provided critical domain insights and engineered features that improved model effectiveness by **10-15%**.
   - Collaborated with stakeholders to align product development with business objectives.
 - **Technologies Used:** Python, AWS SageMaker suite, AWS MWAA
@@ -72,10 +68,9 @@ enhancing operational efficiency.
 **Machine Learning Intern**
 *May 2017 – July 2017*
 
-- Developed a gesture recognition system using **Keras** and **TensorFlow**:
+- Trained a gesture recognition NN model using **Keras** and **TensorFlow**:
   - Achieved **80%** validation accuracy on top-5 gestures using static images with **CNN**.
   - Improved model robustness through data preprocessing and augmentation.
-- **Technologies Used:** Python, Keras, TensorFlow
 
 ---
 
@@ -88,8 +83,6 @@ enhancing operational efficiency.
 - Led the **Network Optimization Team** of three engineers:
   - Reduced CS call drop rate in 2G network by **0.2%**.
   - Increased Inter-RAT handover success rate in UMTS network by **0.8%**, improving overall network performance.
-  - Analyzed calls and routes using SS7 trace at ISUP, TUP, MAP, and SCCP levels.
-- **Technologies Used:** Siemens and Huawei Network Optimization Tools, MapInfo
 
 ---
 
@@ -102,8 +95,7 @@ enhancing operational efficiency.
 - **Thesis:** "Enhancing Object Detection in Fine Art Paintings Using Deep Learning Techniques"
   - Developed a custom **CNN** model that improved detection accuracy by **18%** over existing methods.
 - **Research Assistant Positions:**
-  - Worked on statistical image processing, modeling plasmonic nanoparticles in **COMSOL**, and programming Lie groups in **GAP**.
-  - Published two research papers in reputable journals.
+  - Worked on statistical image processing, modeling plasmonic nanoparticles in COMSOL, and programming Lie groups in GAP.
 
 ---
 
@@ -118,9 +110,7 @@ enhancing operational efficiency.
 
 ### **Languages**
 
-- **Russian:** Native
-- **English:** Fluent
-- **German:** Intermediate (B2 Level)
+- **Russian:** Native **|** **English:** Fluent **|** **German:** Intermediate (B2 Level)
 
 ---
 
