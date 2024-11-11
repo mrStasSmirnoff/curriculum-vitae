@@ -60,8 +60,8 @@ Senior Data Scientist with **7+ years** of experience in data analysis, machine 
 - **Designed and implemented** a scalable data warehouse on **Microsoft Azure**, enhancing analytics capabilities and streamlining reporting:
   - Engineered a robust data warehouse using **Data Vault 2.0** modeling, improving data integrity and scalability.
   - Developed and optimized **ETL pipelines** with **Azure Data Factory**, **Databricks**, and **T-SQL**, reducing data processing time by **20%**.
-  - Developed resilient **Python microservices**, containerized with **Docker**, fostering a scalable and maintainable codebase.
-  - Implemented workflow automation using **Apache Airflow**, enhancing operational efficiency.
+  - Developed resilient **Python microservices**, containerized with **Docker** and scheduled via **Apache Airflow**
+enhancing operational efficiency.
 - **Technologies Used:** Python, Azure Data Factory, Databricks, T-SQL, Docker, Airflow
 
 ---
@@ -75,7 +75,6 @@ Senior Data Scientist with **7+ years** of experience in data analysis, machine 
 - Developed a gesture recognition system using **Keras** and **TensorFlow**:
   - Achieved **80%** validation accuracy on top-5 gestures using static images with **CNN**.
   - Improved model robustness through data preprocessing and augmentation.
-  - Presented findings to the R&D department, facilitating integration of ML solutions into automotive applications.
 - **Technologies Used:** Python, Keras, TensorFlow
 
 ---
@@ -90,7 +89,6 @@ Senior Data Scientist with **7+ years** of experience in data analysis, machine 
   - Reduced CS call drop rate in 2G network by **0.2%**.
   - Increased Inter-RAT handover success rate in UMTS network by **0.8%**, improving overall network performance.
   - Analyzed calls and routes using SS7 trace at ISUP, TUP, MAP, and SCCP levels.
-- Received an appreciation letter from the CEO of the Republic Bashkortostan branch of PJSC “MegaFon” for outstanding performance.
 - **Technologies Used:** Siemens and Huawei Network Optimization Tools, MapInfo
 
 ---
@@ -129,8 +127,7 @@ Senior Data Scientist with **7+ years** of experience in data analysis, machine 
 ### **Additional Information**
 
 - **Volunteer:** Active member of the Bashkortostan branch of the Russian Union of Young Scientists.
-- **Industry Focus:** Specializing in **E-commerce** and **Fintech**, helping businesses leverage data strategically for competitive advantage.
-- **Passion & Goals:** Committed to continuous learning and applying cutting-edge technologies to solve complex problems; aiming to contribute to innovative teams, driving data-driven decision-making.
+- **Awards:** Appreciation letter from the CEO of the Republic Bashkortostan branch of PJSC “MegaFon” for outstanding performance.
 
 ---
 
