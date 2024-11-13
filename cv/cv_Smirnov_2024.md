@@ -19,10 +19,10 @@ Senior Data Scientist with **7+ years** of experience leading data-driven projec
 ### **Technical Skills**
 
 - **Programming Languages:** Python, PySpark, SQL
-- **Machine Learning & AI:** Regression, SVM, Decision Trees, Boosting, CNNs, LSTMs, Keras, TensorFlow, LLMs
+- **Machine Learning & AI:** Classical ML (Regression, SVM, Decision Trees, Boosting etc), Deep Learning (CNNs, LSTMs), LLMs
 - **Cloud Platforms:** AWS, Azure
 - **Data Engineering:** Data Warehouse Design (including Data Vault 2.0), ETL Development
-- **Tools & Technologies:** Airflow, Git, FastAPI, Docker, Kubernetes,
+- **Tools & Technologies:** Airflow, Git, FastAPI, Docker
 - **Methodologies:** Agile (Scrum), Test-Driven Development
 
 ---
