@@ -5,24 +5,27 @@
 
 ### **Contact Information**
 
-- **Email:** mr.stassmirnoff@hotmail.com **|** **Phone:** +49 176 4345 8829
-- **GitHub:** [github.com/mrStasSmirnoff](https://github.com/mrStasSmirnoff) **|** **LinkedIn:** [linkedin.com/in/smirnov-stanislav](https://www.linkedin.com/in/smirnov-stanislav/)
+- **Email:** mr.stassmirnoff@hotmail.com
+- **Phone:** +49 176 4345 8829
+- **GitHub:** [github.com/mrStasSmirnoff](https://github.com/mrStasSmirnoff)
+- **LinkedIn:** [linkedin.com/in/smirnov-stanislav](https://www.linkedin.com/in/smirnov-stanislav/)
+
 
 ---
 
 ### **Summary**
 
-Senior Data Scientist with **7+ years** of experience leading data-driven projects from concept to deployment. Expertise in scalable machine learning solutions, predictive modeling, and advanced analytics in E-commerce and Fintech. Proficient in Python, SQL, AWS, and Azure.
+Senior Data Scientist with **7+ years** of experience leading data-driven projects from concept to deployment. Expertise in scalable machine learning solutions, predictive modeling, and advanced analytics in E-commerce and Fintech. Proficient in Python, SQL, AWS and Azure.
 
 ---
 
 ### **Technical Skills**
 
 - **Programming Languages:** Python, PySpark, SQL
-- **Machine Learning & AI:** Regression, SVM, Decision Trees, Boosting, CNNs, LSTMs, Keras, TensorFlow, LLMs
+- **Machine Learning & AI:** Classic ML (Regression, SVM, Decision Trees, Boosting), Deep Learnign (CNNs, LSTMs), LLMs
 - **Cloud Platforms:** AWS, Azure
 - **Data Engineering:** Data Warehouse Design (including Data Vault 2.0), ETL Development
-- **Tools & Technologies:** Airflow, Git, FastAPI, Docker, Kubernetes,
+- **Tools & Technologies:** Airflow, Git, FastAPI, Docker, Kubernetes
 - **Methodologies:** Agile (Scrum), Test-Driven Development
 
 ---
@@ -110,7 +113,9 @@ enhancing operational efficiency.
 
 ### **Languages**
 
-- **Russian:** Native **|** **English:** Fluent **|** **German:** Intermediate (B2 Level)
+- **Russian:** Native
+- **English:** Fluent
+- **German:** Intermediate (B2 Level)
 
 ---
 
