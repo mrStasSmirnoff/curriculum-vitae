@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{needspace}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \Needspace{5\baselineskip}
+  \vspace{-2pt}\item
+  \textbf{#1}\hfill #2\\
+  \textit{\small #3}\hfill \textit{\small #4}\\
+  \vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% For single-line entries (e.g., publications): less aggressive spacing
+\newcommand{\resumeOneLineHeading}[2]{
+  \item
+  \small #1\hfill #2\\[-1pt]
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Large \scshape Stanislav Smirnov} \\ \vspace{1pt}
+    \small Cologne, Germany $|$ +49 176 4345 8829 $|$ \href{mailto:mr.stassmirnoff@hotmail.com}{\underline{mr.stassmirnoff@hotmail.com}} $|$
+    \href{https://www.linkedin.com/in/smirnov-stanislav/}{\underline{linkedin.com/in/smirnov-stanislav}} $|$
+    \href{https://github.com/mrStasSmirnoff}{\underline{github.com/mrStasSmirnoff}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+Senior Data Scientist in payments/fintech focused on payment orchestration, routing, retries and decline recovery. Product-adjacent: I drive prioritization and stakeholder alignment, translate insights into shippable changes, and own KPI definition and post-launch evaluation.
+
+%-----------HIGHLIGHTS-----------
+\section{Highlights}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt, partopsep=0pt]
+    \item \textbf{4x} uplift in fallback routing success and \textbf{3x} increase in recovered revenue by analyzing PSP performance on NA traffic and redesigning a low-performing rerouting path.
+    \item \textbf{25--50\%} improvement in retry success rates for in-scope transactions through the \textbf{Dynamic Retries} ML solution (idea $\rightarrow$ PoC $\rightarrow$ production rollout).
+    \item Drove decision memos / rollout plans with PM+EM, defined success metrics, and owned launch evaluation and KPI tracking for routing and retry changes.
+\end{itemize}
+\vspace{-2pt}
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL, PySpark} \\
+     \textbf{ML/AI}{: classical ML (Regression, SVM, Decision Trees, Boosting), Deep Learning (CNNs, LSTMs), LLMs} \\
+     \textbf{Payments}{: authorization/decline analysis, PSP performance, routing, retries, tokenization (network tokens)} \\
+     \textbf{Product}{: decision memos / PRDs, roadmap/backlog prioritization, KPI definition, stakeholder alignment, rollout evaluation} \\
+     \textbf{Cloud}{: AWS, Azure} \\
+     \textbf{Data Engineering}{: data warehouse design (Data Vault 2.0), ETL development} \\
+     \textbf{Tools}{: Git, Docker, Airflow, FastAPI, SageMaker, MWAA, Databricks, Azure Data Factory, TensorFlow, Keras}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Data Scientist, Payments}{April 2024 -- Present}
+      {Cleverbridge AG}{Cologne, DE}
+      \resumeItemListStart
+        \resumeItem{Improved fallback re-routing authorization success by \textbf{4x} (from 2--3\% to 11\%) by analyzing PSP performance on NA traffic and proposing a switch from a low-performing route to a higher-performing alternative; led to a \textbf{3x} increase in recovered revenue on that traffic slice.}
+        \resumeItem{Owned end-to-end optimization lifecycle: opportunity discovery $\rightarrow$ decision memo $\rightarrow$ engineering alignment $\rightarrow$ rollout plan; defined KPIs and reviewed post-launch outcomes.}
+        \resumeItem{Own the evolution of the \textbf{Dynamic Retries} ML solution as part of the payments stack, extending coverage to additional decline categories and use cases.}
+        \resumeItem{Performed deep-dive analysis on BIN-level and regional authorization patterns across PSPs to identify weak routes and opportunities for optimization.}
+        \resumeItem{Derive analytics on tokenization and network-token performance (coverage, success rates, impact on authorization) to inform routing and retry strategies.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Scientist}{December 2021 -- April 2024}
+      {Cleverbridge AG}{Cologne, DE}
+      \resumeItemListStart
+        \resumeItem{Originated and shipped \textbf{Dynamic Retries} (ML-driven retry timing optimization): wrote the proposal/PRD, aligned stakeholders, and led cross-functional delivery from PoC $\rightarrow$ MVP $\rightarrow$ production rollout.}
+        \resumeItem{Achieved \textbf{25--50\%} higher success rate for in-scope retries; owned KPI definition, measurement design, and rollout evaluation.}
+        \resumeItem{Built a hybrid retry strategy combining a rule-based scheduling heuristic (country/currency $\times$ day-of-month $\times$ hour-of-day) with ML timing optimization to select high-conversion retry windows.}
+        \resumeItem{Implemented and operated the solution on \textbf{AWS} (Python microservices, SageMaker, MWAA), including training/inference workflows and automation for reliable production runs.}
+        \resumeItem{Designed the ML framework behind \textbf{CleverAutomations} and delivered churn-reduction models and automated workflows that identified at-risk customers and triggered targeted campaigns.}
+      \resumeItemListEnd
+
+    \Needspace{12\baselineskip}
+    \resumeSubheading
+      {Data Engineer}{September 2019 -- December 2021}
+      {Cleverbridge AG}{Cologne, DE}
+      \resumeItemListStart
+        \resumeItem{Led the design and implementation of a scalable data warehouse on Azure (Data Vault 2.0), enabling reliable reporting and self-service analytics across the company.}
+        \resumeItem{Built and optimized ETL pipelines (Azure Data Factory, Databricks, T-SQL) processing millions of records per day from multiple source systems.}
+        \resumeItem{Managed schema changes and migrations with Flyway, ensuring consistent, versioned deployments across environments.}
+        \resumeItem{Developed Python microservices and Airflow workflows for data products, containerized with Docker for resilient, maintainable operation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Machine Learning Intern}{May 2017 -- July 2017}
+      {KOSTAL Group}{Dortmund, DE}
+      \resumeItemListStart
+        \resumeItem{Trained a gesture-recognition neural network using Keras and TensorFlow; achieved \textbf{80\%} validation accuracy on top-5 gestures using static image inputs with a CNN.}
+        \resumeItem{Improved model robustness through data preprocessing and augmentation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Network Optimization Engineer}{May 2012 -- March 2015}
+      {MegaFon}{Republic of Bashkortostan, Russia}
+      \resumeItemListStart
+        \resumeItem{Led the \textbf{network optimization team} of three engineers.}
+        \resumeItem{Reduced CS call drop rate in the 2G network by \textbf{0.2\%}.}
+        \resumeItem{Increased Inter-RAT handover success rate in the UMTS network by \textbf{0.8\%}, improving overall network performance.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Object Detection in Fine Art Paintings (MSc Thesis)} $|$ \emph{Python, Deep Learning, CNN}}{2017 -- 2018}
+      \resumeItemListStart
+        \resumeItem{Developed a custom CNN-based approach for object detection in fine art paintings, improving detection accuracy by \textbf{18\%} over existing methods.}
+        \resumeItem{Built the training and evaluation workflow and performed systematic error analysis to iterate on model design.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {University of Paderborn}{Paderborn, DE}
+      {Master of Science in Electrical Systems Engineering (Signal Processing)}{2015 -- 2018}
+      \resumeItemListStart
+        \resumeItem{\textbf{Thesis:} Enhancing Object Detection in Fine Art Paintings Using Deep Learning Techniques (\textbf{+18\%} detection accuracy vs. baseline).}
+        \resumeItem{\textbf{Research Assistant:} statistical image processing; plasmonic nanoparticles modeling in COMSOL; Lie groups programming in GAP.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS & CERTIFICATIONS-----------
+\section{Publications \& Certifications}
+  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt, topsep=0pt]
+
+    \resumeOneLineHeading
+      {\textbf{\href{https://ieeexplore.ieee.org/abstract/document/9089828}{\underline{Deep Learning for Object Detection in Fine Art Paintings}}} $|$ \emph{IEEE Xplore}}{2020}
+
+    \resumeOneLineHeading
+      {\textbf{\href{https://www.sciencedirect.com/science/article/abs/pii/S1359645420308491}{\underline{Nonlinear Dielectric Properties of Random Paraelectric-Dielectric Composites}}} $|$ \emph{Acta Materialia}}{2021}
+
+    \resumeOneLineHeading
+      {\textbf{\href{https://grow.cleverbridge.com/blog/failed-payment-recovery-dynamic-retries}{\underline{Dynamic Retries: failed payment recovery}}} $|$ \emph{Technical writing}}{}
+
+    \resumeOneLineHeading
+      {\textbf{AWS Certified Cloud Practitioner}}{}
+
+  \end{itemize}
+
+%-----------LANGUAGES-----------
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      Russian (Native) $|$ English (Fluent) $|$ German (Intermediate, B2)
+    }}
+ \end{itemize}
+
+%-----------ADDITIONAL INFORMATION-----------
+\section{Additional Information}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Volunteer}: Bashkortostan branch of the Russian Union of Young Scientists. \\
+      \textbf{Awards}: Appreciation letter from the CEO of the Republic of Bashkortostan branch of PJSC ``MegaFon'' for outstanding performance.
+    }}
+ \end{itemize}
+
+\end{document}
