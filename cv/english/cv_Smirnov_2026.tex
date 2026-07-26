@@ -97,14 +97,15 @@
 
 %-----------SUMMARY-----------
 \section{Summary}
-Senior Data Scientist in payments/fintech focused on payment orchestration, routing, retries and decline recovery. Product-adjacent: I drive prioritization and stakeholder alignment, translate insights into shippable changes, and own KPI definition and post-launch evaluation.
+Senior Data Scientist in payments and fraud with experience leading 0-to-1 ML and optimization products across routing, retries, decline recovery, tokenization and fraud detection. I combine ML and analytics with KPI ownership, stakeholder alignment, and production delivery to improve authorization, recover revenue, and reduce fraud.
 
 %-----------HIGHLIGHTS-----------
 \section{Highlights}
 \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt, partopsep=0pt]
-    \item \textbf{4x} uplift in fallback routing success and \textbf{3x} increase in recovered revenue by analyzing PSP performance on NA traffic and redesigning a low-performing rerouting path.
-    \item \textbf{25--50\%} improvement in retry success rates for in-scope transactions through the \textbf{Dynamic Retries} ML solution (idea $\rightarrow$ PoC $\rightarrow$ production rollout).
-    \item Drove decision memos / rollout plans with PM+EM, defined success metrics, and owned launch evaluation and KPI tracking for routing and retry changes.
+    \item Delivered a \textbf{4x} uplift in fallback routing success and \textbf{3x} increase in recovered revenue by analyzing PSP performance on NA traffic and redesigning a low-performing rerouting path.
+    \item Originated and scaled the \textbf{Dynamic Retries} ML solution from idea to production, improving in-scope retry success by \textbf{25--50\%} through KPI-led experimentation and rollout.
+    \item Rebuilt a production fraud ML model improving fraud recall from \textbf{${\sim}$44\% to ${\sim}$72\%} at the same \textbf{1\% false-positive rate} and increasing PR-AUC from \textbf{0.51 to 0.80}.
+    \item Drove cross-functional delivery with Product, Engineering, and Fraud Prevention from prioritization and KPI definition through rollout and evaluation.
 \end{itemize}
 \vspace{-2pt}
 
@@ -112,13 +113,12 @@ Senior Data Scientist in payments/fintech focused on payment orchestration, rout
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, SQL, PySpark} \\
-     \textbf{ML/AI}{: classical ML (Regression, SVM, Decision Trees, Boosting), Deep Learning (CNNs, LSTMs), LLMs} \\
-     \textbf{Payments}{: authorization/decline analysis, PSP performance, routing, retries, tokenization (network tokens)} \\
-     \textbf{Product}{: decision memos / PRDs, roadmap/backlog prioritization, KPI definition, stakeholder alignment, rollout evaluation} \\
-     \textbf{Cloud}{: AWS, Azure} \\
-     \textbf{Data Engineering}{: data warehouse design (Data Vault 2.0), ETL development} \\
-     \textbf{Tools}{: Git, Docker, Airflow, FastAPI, SageMaker, MWAA, Databricks, Azure Data Factory, TensorFlow, Keras}
+     \textbf{Leadership \& Delivery}{: stakeholder management, cross-functional leadership, execution ownership, structured problem framing, mentoring junior data scientists} \\
+     \textbf{Product \& Strategy}{: KPI definition, prioritization, decision memos / PRDs, rollout planning, launch evaluation, roadmap/backlog definition, experimentation design} \\
+     \textbf{Payments \& Fraud}{: authorization/decline analysis, PSP performance, routing, retries, tokenization (network tokens), payment optimization, fraud detection} \\
+     \textbf{Programming \& ML/AI}{: Python, SQL, PySpark, classical ML, Deep Learning (CNNs, LSTMs), LLMs} \\
+     \textbf{Cloud \& Data}{: AWS, Azure, Data Vault 2.0, ETL development} \\
+     \textbf{Tools}{: Git, Docker, Airflow, FastAPI, Sagemaker, Databricks, TensorFlow, Keras}
     }}
  \end{itemize}
 
@@ -130,22 +130,22 @@ Senior Data Scientist in payments/fintech focused on payment orchestration, rout
       {Senior Data Scientist, Payments}{April 2024 -- Present}
       {Cleverbridge AG}{Cologne, DE}
       \resumeItemListStart
-        \resumeItem{Improved fallback re-routing authorization success by \textbf{4x} (from 2--3\% to 11\%) by analyzing PSP performance on NA traffic and proposing a switch from a low-performing route to a higher-performing alternative; led to a \textbf{3x} increase in recovered revenue on that traffic slice.}
-        \resumeItem{Owned end-to-end optimization lifecycle: opportunity discovery $\rightarrow$ decision memo $\rightarrow$ engineering alignment $\rightarrow$ rollout plan; defined KPIs and reviewed post-launch outcomes.}
-        \resumeItem{Own the evolution of the \textbf{Dynamic Retries} ML solution as part of the payments stack, extending coverage to additional decline categories and use cases.}
-        \resumeItem{Performed deep-dive analysis on BIN-level and regional authorization patterns across PSPs to identify weak routes and opportunities for optimization.}
-        \resumeItem{Derive analytics on tokenization and network-token performance (coverage, success rates, impact on authorization) to inform routing and retry strategies.}
-        \resumeItem{Mentoring and supporting junior data scientists through problem framing, model development, experimentation design, and production analytics; raised quality via code reviews and structured feedback.}
+        \resumeItem{Lead payment optimization and fraud ML initiatives across routing, retries, authorization, tokenization, and fraud detection, owning work from opportunity discovery $\rightarrow$ decision memo $\rightarrow$ stakeholder alignment $\rightarrow$ rollout plan; defined KPIs and reviewed post-launch outcomes.}
+        \resumeItem{Improved fallback re-routing authorization success by \textbf{4x} (from 2--3\% to 11\%) by analyzing PSP performance on NA traffic and proposing a switch from a low-performing route to a higher-performing alternative; resulted in a \textbf{3x} increase in recovered revenue on that traffic slice.}
+        \resumeItem{Initiated and led the rebuild of a production fraud ML model that had not been retrained for two years; worked with Fraud Prevention to redesign the fraud-labelling logic, retrained and deployed the model, and improved offline fraud recall from \textbf{${\sim}$44\% to ${\sim}$72\%} at the same \textbf{1\% false-positive rate} (PR-AUC: \textbf{0.51 to 0.80}).
+        The evaluation benchmarked the existing model and an external vendor score, supporting a build-vs-buy decision.}
+        \resumeItem{Own the evolution of \textbf{Dynamic Retries} and use BIN-level, regional, PSP, and network-token performance analysis to prioritize additional routing and retry use cases.}
+        \resumeItem{Lead and mentor junior data scientists through problem framing, model development, experimentation design, and production analytics; raised quality via code reviews and structured feedback.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Data Scientist}{December 2021 -- April 2024}
       {Cleverbridge AG}{Cologne, DE}
       \resumeItemListStart
-        \resumeItem{Originated and shipped \textbf{Dynamic Retries} (ML-driven retry timing optimization): wrote the proposal/PRD, aligned stakeholders, and led cross-functional delivery from PoC $\rightarrow$ MVP $\rightarrow$ production rollout.}
-        \resumeItem{Achieved \textbf{25--50\%} higher success rate for in-scope retries; owned KPI definition, measurement design, and rollout evaluation.}
-        \resumeItem{Built a hybrid retry strategy combining a rule-based scheduling heuristic (country/currency $\times$ day-of-month $\times$ hour-of-day) with ML timing optimization to select high-conversion retry windows.}
-        \resumeItem{Implemented and operated the solution on \textbf{AWS} (Python microservices, SageMaker, MWAA), including training/inference workflows and automation for reliable production runs.}
+        \resumeItem{Originated and shipped \textbf{Dynamic Retries}, an ML-driven retry timing product; wrote the product proposal, aligned engineering, product, and business stakeholders, and led delivery from PoC $\rightarrow$ MVP $\rightarrow$ production rollout.}
+        \resumeItem{Improved success rates for in-scope retries by \textbf{25--50\%}, owning KPI definition, measurement design, and iteration based on post-launch performance.}
+        \resumeItem{Designed a hybrid retry strategy combining a rule-based scheduling heuristic (country/currency $\times$ day-of-month $\times$ hour-of-day) with ML timing optimization to select high-conversion retry windows.}
+        \resumeItem{Implemented and operated the solution on AWS (Python microservices, SageMaker, MWAA), including training/inference workflows and automation for reliable production runs.}
         \resumeItem{Designed the ML framework behind \textbf{CleverAutomations} and delivered churn-reduction models and automated workflows that identified at-risk customers and triggered targeted campaigns.}
       \resumeItemListEnd
 
@@ -228,7 +228,7 @@ Senior Data Scientist in payments/fintech focused on payment orchestration, rout
 \section{Languages}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      Russian (Native) $|$ English (Fluent) $|$ German (Intermediate, B2)
+      Russian (Native) $|$ English (Fluent) $|$ German (Upper Intermediate, B2)
     }}
  \end{itemize}
 

@@ -27,7 +27,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
+% Seitenränder
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -39,21 +39,22 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Formatierung der Abschnitte
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generated pdf is machine readable/ATS parsable
+% Maschinenlesbares / ATS-freundliches PDF
 \pdfgentounicode=1
 
 %-------------------------
-% Custom commands
+% Benutzerdefinierte Befehle
 \newcommand{\resumeItem}[1]{
-  \item\small{#1\vspace{-2pt}}
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
 }
 
-% ATS-freundlicher als Tabellen: kein tabular* in Überschriften
 \newcommand{\resumeSubheading}[4]{
   \Needspace{5\baselineskip}
   \vspace{-2pt}\item
@@ -63,12 +64,12 @@
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-  \item
-  \small #1\hfill #2\\
-  \vspace{-7pt}
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
 }
 
-% Speziell für einzeilige Einträge (z.B. Publikationen): weniger negative Abstände
 \newcommand{\resumeOneLineHeading}[2]{
   \item
   \small #1\hfill #2\\[-1pt]
@@ -82,129 +83,144 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%  LEBENSLAUF  %%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
 \begin{center}
     \textbf{\Large \scshape Stanislav Smirnov} \\ \vspace{1pt}
-    \small K\"oln, Deutschland $|$ +49 176 4345 8829 $|$ \href{mailto:mr.stassmirnoff@hotmail.com}{\underline{mr.stassmirnoff@hotmail.com}} $|$
+    \small Köln, Deutschland $|$ +49 176 4345 8829 $|$ \href{mailto:mr.stassmirnoff@hotmail.com}{\underline{mr.stassmirnoff@hotmail.com}} $|$
     \href{https://www.linkedin.com/in/smirnov-stanislav/}{\underline{linkedin.com/in/smirnov-stanislav}} $|$
     \href{https://github.com/mrStasSmirnoff}{\underline{github.com/mrStasSmirnoff}}
 \end{center}
 
-%-----------SUMMARY-----------
+%-----------KURZPROFIL-----------
 \section{Kurzprofil}
-Senior Data Scientist im Payments/Fintech-Umfeld mit Fokus auf Payment-Orchestrierung, Routing, Retries und Decline Recovery. Produktnah: Ich steuere Priorisierung und Stakeholder-Alignment, \"ubersetze Insights in umsetzbare \"Anderungen und verantworte KPI-Definition sowie Auswertung nach dem Rollout.
+Senior Data Scientist mit Schwerpunkt Payments und Fraud sowie Erfahrung in der Leitung von 0-to-1-ML- und Optimierungsprodukten in den Bereichen Routing, Retries, Decline Recovery, Tokenisierung und Fraud Detection. Ich verbinde ML und Analytics mit KPI-Verantwortung, Stakeholder-Alignment und produktiver Umsetzung, um Autorisierungsraten zu verbessern, Umsatz zurückzugewinnen und Betrug zu reduzieren.
 
-%-----------HIGHLIGHTS-----------
+%-----------ERFOLGE-----------
 \section{Erfolge}
 \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt, partopsep=0pt]
-    \item \textbf{4x} Steigerung der Fallback-Routing-Erfolgsquote und \textbf{3x} Anstieg des zur\"uckgewonnenen Umsatzes durch Analyse der PSP-Performance im NA-Traffic und Redesign einer schwach performenden Rerouting-Route.
-    \item \textbf{25--50\%} Verbesserung der Retry-Erfolgsraten f\"ur in-scope Transaktionen durch die \textbf{Dynamic-Retries} ML-L\"osung (Idee $\rightarrow$ PoC $\rightarrow$ Produktiv-Rollout).
-    \item Erstellte Entscheidungsvorlagen und Rollout-Pl\"ane mit PM/EM, definierte Erfolgsmetriken und verantwortete Launch-Auswertung sowie KPI-Tracking f\"ur Routing- und Retry-\"Anderungen.
+    \item Steigerte die Erfolgsquote im Fallback-Routing um den Faktor \textbf{4} und den zurückgewonnenen Umsatz um den Faktor \textbf{3} durch Analyse der PSP-Performance im nordamerikanischen Traffic und Neugestaltung eines schwach performenden Rerouting-Pfads.
+    \item Konzipierte und skalierte die ML-Lösung \textbf{Dynamic Retries} von der Idee bis zum Produktivbetrieb und verbesserte die Retry-Erfolgsrate für die relevanten Transaktionen durch KPI-basierte Experimente und Rollout um \textbf{25--50\%}.
+    \item Baute ein produktives Fraud-ML-Modell neu auf und steigerte den Fraud Recall von \textbf{${\sim}$44\% auf ${\sim}$72\%} bei unveränderter \textbf{False-Positive-Rate von 1\%}; der PR-AUC stieg von \textbf{0.51 auf 0.80}.
+    \item Steuerte die cross-funktionale Umsetzung mit Product, Engineering und Fraud Prevention von Priorisierung und KPI-Definition bis zu Rollout und Evaluation.
 \end{itemize}
 \vspace{-2pt}
 
-%-----------SKILLS-----------
+%-----------KOMPETENZEN-----------
 \section{Kompetenzen}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programmiersprachen:} Python, SQL, PySpark \\
-     \textbf{ML/AI:} Klassisches ML (Regression, SVM, Decision Trees, Boosting), Deep Learning (CNNs, LSTMs), LLMs \\
-     \textbf{Payments:} Autorisierungs-/Decline-Analyse, PSP-Performance, Routing, Retries, Tokenisierung (Network Tokens) \\
-     \textbf{Produktarbeit:} Entscheidungsvorlagen/PRDs, Priorisierung (Roadmap/Backlog), KPI-Definition, Stakeholder-Alignment, Rollout-Evaluation \\
-     \textbf{Cloud:} AWS, Azure \\
-     \textbf{Data Engineering:} Data-Warehouse-Design (Data Vault 2.0), ETL-Entwicklung \\
-     \textbf{Tools:} Git, Docker, Airflow, FastAPI, SageMaker, MWAA, Databricks, Azure Data Factory, TensorFlow, Keras
+     \textbf{Führung \& Umsetzung}{: Stakeholder-Management, cross-funktionale Führung, End-to-End-Verantwortung, strukturierte Problemdefinition, Mentoring von Junior Data Scientists} \\
+     \textbf{Produkt \& Strategie}{: KPI-Definition, Priorisierung, Entscheidungsvorlagen / PRDs, Rollout-Planung, Launch-Evaluation, Roadmap-/Backlog-Definition, Experimentdesign} \\
+     \textbf{Payments \& Fraud}{: Autorisierungs-/Decline-Analyse, PSP-Performance, Routing, Retries, Tokenisierung (Network Tokens), Payment-Optimierung, Fraud Detection} \\
+     \textbf{Programmierung \& ML/AI}{: Python, SQL, PySpark, klassisches ML, Deep Learning (CNNs, LSTMs), LLMs} \\
+     \textbf{Cloud \& Data}{: AWS, Azure, Data Vault 2.0, ETL-Entwicklung} \\
+     \textbf{Tools}{: Git, Docker, Airflow, FastAPI, SageMaker, Databricks, TensorFlow, Keras}
     }}
  \end{itemize}
 
-%-----------EXPERIENCE-----------
+%-----------BERUFSERFAHRUNG-----------
 \section{Berufserfahrung}
   \resumeSubHeadingListStart
 
     \resumeSubheading
       {Senior Data Scientist, Payments}{April 2024 -- heute}
-      {Cleverbridge AG}{K\"oln, DE}
+      {Cleverbridge AG}{Köln, DE}
       \resumeItemListStart
-        \resumeItem{Verbesserte die Fallback-Rerouting-Autorisierungsrate um \textbf{4x} (von 2--3\% auf 11\%) durch Analyse der PSP-Performance im NA-Traffic und Empfehlung eines Wechsels von einer schwach performenden Route zu einer st\"arkeren Alternative; resultierte in \textbf{3x} mehr zur\"uckgewonnenem Umsatz in diesem Traffic-Segment.}
-        \resumeItem{Verantworte den End-to-End Optimierungszyklus: Opportunity Discovery $\rightarrow$ Entscheidungsvorlage $\rightarrow$ Engineering-Alignment $\rightarrow$ Rollout-Plan; KPI-Definition und Auswertung nach Launch.}
-        \resumeItem{Verantworte die Weiterentwicklung der \textbf{Dynamic-Retries} ML-L\"osung als Teil des Payments-Stacks (Abdeckung zus\"atzlicher Decline-Kategorien und Use Cases).}
-        \resumeItem{Durchgef\"uhrte Deep-Dive-Analysen zu BIN- und regionsspezifischen Autorisierungsmustern \"uber PSPs zur Identifikation schwacher Routen und Optimierungspotenzial.}
-        \resumeItem{Erstelle Analysen zur Tokenisierung und Network-Token-Performance (Coverage, Erfolgsraten, Impact auf Autorisierung) zur Ableitung von Routing- und Retry-Strategien.}
-        \resumeItem{Betreute und coachte Junior Data Scientists in Problemdefinition, Modellentwicklung, Experimentdesign und produktionsnaher Analyse; steigerte die Qualit\"at durch Code-Reviews und strukturiertes Feedback.}
+        \resumeItem{Leite Initiativen zur Payment-Optimierung und Fraud-ML in den Bereichen Routing, Retries, Autorisierung, Tokenisierung und Fraud Detection. Ich verantworte den Weg von Opportunity Discovery und Entscheidungsvorlage über Stakeholder-Alignment bis zum Rollout, definiere KPIs und bewerte die Ergebnisse nach dem Launch.}
+
+        \resumeItem{Steigerte die Autorisierungsrate im Fallback-Rerouting um den Faktor \textbf{4} (von 2--3\% auf 11\%), indem ich einen schwachen Routing-Pfad im nordamerikanischen Traffic identifizierte und den Wechsel zu einer leistungsfähigeren Alternative anstieß; der zurückgewonnene Umsatz in diesem Traffic-Segment stieg um den Faktor \textbf{3}.}
+
+        \resumeItem{Initiierte und leitete den Neuaufbau eines produktiven Fraud-ML-Modells, das zwei Jahre lang nicht nachtrainiert worden war. Gemeinsam mit Fraud Prevention überarbeitete ich die Fraud-Labeling-Logik, trainierte und deployte das Modell und steigerte den Offline-Fraud-Recall von \textbf{${\sim}$44\% auf ${\sim}$72\%} bei unveränderter \textbf{False-Positive-Rate von 1\%} (PR-AUC: \textbf{0.51 auf 0.80}). Die Evaluation verglich das bestehende Modell mit dem Score eines externen Anbieters und unterstützte die Build-vs-Buy-Entscheidung.}
+
+        \resumeItem{Verantworte die Weiterentwicklung von \textbf{Dynamic Retries} und nutze Analysen auf BIN-, Regions-, PSP- und Network-Token-Ebene, um zusätzliche Routing- und Retry-Use-Cases zu priorisieren.}
+
+        \resumeItem{Führe und mentore Junior Data Scientists in Problemdefinition, Modellentwicklung, Experimentdesign und produktionsnaher Analyse; verbessere die Lieferqualität durch Code-Reviews und strukturiertes Feedback.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Data Scientist}{Dezember 2021 -- April 2024}
-      {Cleverbridge AG}{K\"oln, DE}
+      {Cleverbridge AG}{Köln, DE}
       \resumeItemListStart
-        \resumeItem{Konzipierte und brachte \textbf{Dynamic Retries} in Produktion (ML-optimiertes Retry-Timing): schrieb Proposal/PRD, alignte Stakeholder und leitete die cross-funktionale Umsetzung von PoC $\rightarrow$ MVP $\rightarrow$ Produktiv-Rollout.}
-        \resumeItem{Erreichte \textbf{25--50\%} h\"ohere Erfolgsraten f\"ur in-scope Retries; verantwortete KPI-Definition, Messdesign und Rollout-Evaluation.}
-        \resumeItem{Entwickelte eine hybride Retry-Strategie: regelbasiertes Scheduling (Land/W\"ahrung $\times$ Tag-im-Monat $\times$ Uhrzeit) kombiniert mit ML-Timing-Optimierung zur Auswahl von Retry-Zeitfenstern mit hoher Conversion.}
-        \resumeItem{Implementierte und betrieb die L\"osung auf \textbf{AWS} (Python Microservices, SageMaker, MWAA), inkl.\ Trainings-/Inference-Workflows und Automatisierung f\"ur zuverl\"assige Produktionsl\"aufe.}
-        \resumeItem{Entwarf das ML-Framework hinter \textbf{CleverAutomations} und lieferte Churn-Reduction-Modelle sowie automatisierte Workflows, die at-risk Kunden identifizierten und zielgerichtete Kampagnen ausl\"osten.}
+        \resumeItem{Konzipierte und brachte \textbf{Dynamic Retries}, ein ML-basiertes Produkt zur Optimierung des Retry-Timings, in Produktion. Verfasste den Produktvorschlag, stimmte Engineering, Product und Business aufeinander ab und leitete die Umsetzung von PoC über MVP bis zum Produktiv-Rollout.}
+
+        \resumeItem{Steigerte die Erfolgsraten für die relevanten Retries um \textbf{25--50\%} und verantwortete KPI-Definition, Messdesign sowie die Weiterentwicklung auf Basis der Ergebnisse nach dem Rollout.}
+
+        \resumeItem{Entwickelte eine hybride Retry-Strategie aus regelbasiertem Scheduling nach Land, Währung, Monatstag und Uhrzeit sowie ML-basierter Timing-Optimierung zur Auswahl von Retry-Zeitfenstern mit hoher Conversion.}
+
+        \resumeItem{Implementierte und betrieb die Lösung auf AWS mit Python-Microservices, SageMaker und MWAA, einschließlich automatisierter Trainings- und Inference-Workflows für einen zuverlässigen Produktivbetrieb.}
+
+        \resumeItem{Entwarf das ML-Framework hinter \textbf{CleverAutomations} und entwickelte Churn-Reduction-Modelle sowie automatisierte Workflows, die abwanderungsgefährdete Kunden identifizierten und gezielte Kampagnen auslösten.}
       \resumeItemListEnd
 
     \Needspace{12\baselineskip}
     \resumeSubheading
       {Data Engineer}{September 2019 -- Dezember 2021}
-      {Cleverbridge AG}{K\"oln, DE}
+      {Cleverbridge AG}{Köln, DE}
       \resumeItemListStart
-        \resumeItem{Leitete Design und Implementierung eines skalierbaren Data Warehouse auf Azure (Data Vault 2.0) f\"ur verl\"assliches Reporting und Self-Service Analytics.}
-        \resumeItem{Entwickelte und optimierte ETL-Pipelines (Azure Data Factory, Databricks, T-SQL) zur Verarbeitung von Millionen Datens\"atzen pro Tag aus mehreren Quellsystemen.}
-        \resumeItem{Steuerte Schema\"anderungen und Migrationen mit Flyway und stellte konsistente, versionierte Deployments \"uber Umgebungen sicher.}
-        \resumeItem{Entwickelte Python-Microservices und Airflow-Workflows f\"ur Data Products; Containerisierung mit Docker f\"ur robuste, wartbare Betriebsf\"uhrung.}
+        \resumeItem{Leitete Design und Implementierung eines skalierbaren Data Warehouse auf Azure nach Data Vault 2.0 und ermöglichte damit zuverlässiges Reporting und Self-Service Analytics im Unternehmen.}
+
+        \resumeItem{Entwickelte und optimierte ETL-Pipelines mit Azure Data Factory, Databricks und T-SQL zur Verarbeitung von Millionen Datensätzen pro Tag aus mehreren Quellsystemen.}
+
+        \resumeItem{Steuerte Schemaänderungen und Migrationen mit Flyway und stellte konsistente, versionierte Deployments über mehrere Umgebungen sicher.}
+
+        \resumeItem{Entwickelte Python-Microservices und Airflow-Workflows für Data Products und containerisierte sie mit Docker für einen robusten und wartbaren Betrieb.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Machine Learning Intern}{Mai 2017 -- Juli 2017}
       {KOSTAL Group}{Dortmund, DE}
       \resumeItemListStart
-        \resumeItem{Trainierte ein Gesture-Recognition Neural Network mit Keras und TensorFlow; erreichte \textbf{80\%} Validierungsgenauigkeit (Top-5 Gesten) auf Basis statischer Bildinputs mit CNN.}
-        \resumeItem{Verbesserte die Robustheit durch Datenvorverarbeitung und Augmentation.}
+        \resumeItem{Trainierte ein neuronales Netz zur Gestenerkennung mit Keras und TensorFlow und erreichte \textbf{80\%} Validierungsgenauigkeit für die fünf wichtigsten Gesten auf Basis statischer Bilddaten und eines CNN.}
+
+        \resumeItem{Verbesserte die Robustheit des Modells durch Datenvorverarbeitung und Augmentation.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Netzoptimierungsingenieur}{Mai 2012 -- M\"arz 2015}
+      {Netzoptimierungsingenieur}{Mai 2012 -- März 2015}
       {MegaFon}{Republik Baschkortostan, Russland}
       \resumeItemListStart
         \resumeItem{Leitete ein \textbf{Netzoptimierungsteam} aus drei Ingenieuren.}
+
         \resumeItem{Reduzierte die CS Call Drop Rate im 2G-Netz um \textbf{0.2\%}.}
+
         \resumeItem{Steigerte die Inter-RAT Handover Success Rate im UMTS-Netz um \textbf{0.8\%} und verbesserte damit die Gesamtperformance des Netzes.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
+%-----------PROJEKTE-----------
 \section{Projekte}
   \resumeSubHeadingListStart
 
     \resumeProjectHeading
-      {\textbf{Objekterkennung in Fine-Art-Gem\"alden (Masterarbeit)} $|$ \emph{Python, Deep Learning, CNN}}{2017 -- 2018}
+      {\textbf{Objekterkennung in Kunstgemälden (Masterarbeit)} $|$ \emph{Python, Deep Learning, CNN}}{2017 -- 2018}
       \resumeItemListStart
-        \resumeItem{Entwickelte einen CNN-basierten Ansatz zur Objekterkennung in Fine-Art-Gem\"alden und verbesserte die Detektionsgenauigkeit um \textbf{18\%} gegen\"uber dem Baseline-Ansatz.}
-        \resumeItem{Aufbau von Training/Evaluation-Workflows und systematische Fehleranalyse zur Iteration des Modelldesigns.}
+        \resumeItem{Entwickelte einen eigenen CNN-basierten Ansatz zur Objekterkennung in Kunstgemälden und verbesserte die Detektionsgenauigkeit gegenüber bestehenden Methoden um \textbf{18\%}.}
+
+        \resumeItem{Baute den Trainings- und Evaluationsworkflow auf und führte eine systematische Fehleranalyse zur Weiterentwicklung des Modells durch.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
-%-----------EDUCATION-----------
+%-----------AUSBILDUNG-----------
 \section{Ausbildung}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Universit\"at Paderborn}{Paderborn, DE}
-      {Master of Science, Electrical Systems Engineering (Schwerpunkt Signal Processing)}{2015 -- 2018}
+      {Universität Paderborn}{Paderborn, DE}
+      {Master of Science in Electrical Systems Engineering (Schwerpunkt Signal Processing)}{2015 -- 2018}
       \resumeItemListStart
-        \resumeItem{\textbf{Masterarbeit:} Enhancing Object Detection in Fine Art Paintings Using Deep Learning Techniques (\textbf{+18\%} Detektionsgenauigkeit vs.\ Baseline).}
+        \resumeItem{\textbf{Masterarbeit:} Enhancing Object Detection in Fine Art Paintings Using Deep Learning Techniques (\textbf{+18\%} Detektionsgenauigkeit gegenüber der Baseline).}
+
         \resumeItem{\textbf{Wissenschaftliche Hilfskraft:} statistische Bildverarbeitung; Modellierung plasmonischer Nanopartikel in COMSOL; Programmierung von Lie-Gruppen in GAP.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
-%-----------PUBLICATIONS & CERTIFICATIONS-----------
+%-----------PUBLIKATIONEN & ZERTIFIZIERUNGEN-----------
 \section{Publikationen \& Zertifizierungen}
   \begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt, topsep=0pt]
 
@@ -222,26 +238,20 @@ Senior Data Scientist im Payments/Fintech-Umfeld mit Fokus auf Payment-Orchestri
 
   \end{itemize}
 
-%-----------LANGUAGES-----------
+%-----------SPRACHEN-----------
 \section{Sprachen}
  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{Russisch (Muttersprache) $|$ Englisch (flie\ss end) $|$ Deutsch (B2)}}
- \end{itemize}
-
-%-----------ADDITIONAL INFORMATION-----------
-\section{Weitere Informationen}
- \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{Ehrenamt}: Baschkortostan-Zweig der Russischen Union Junger Wissenschaftler. \\
-      \textbf{Auszeichnung}: Dankschreiben des CEO der PJSC ``MegaFon'' (Zweig Republik Baschkortostan) f\"ur herausragende Leistung.
+      Russisch (Muttersprache) $|$ Englisch (fließend) $|$ Deutsch (B2)
     }}
  \end{itemize}
 
-%-----------INTERESSEN-----------
-\section{Interessen}
+%-----------WEITERE INFORMATIONEN-----------
+\section{Weitere Informationen}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      Tischfußball (Kapitän, Team in der 3. Kölner Kicker-Liga), Tennis, Fußball
+      \textbf{Ehrenamt}: Regionalverband Baschkortostan der Russischen Union Junger Wissenschaftler. \\
+      \textbf{Auszeichnung}: Dankschreiben des CEO der PJSC ``MegaFon'' in der Republik Baschkortostan für herausragende Leistungen.
     }}
  \end{itemize}
 
