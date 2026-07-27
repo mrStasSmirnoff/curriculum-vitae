@@ -97,28 +97,28 @@
 
 %-----------SUMMARY-----------
 \section{Summary}
-Senior Data Scientist in payments and fraud with experience leading 0-to-1 ML and optimization products across routing, retries, decline recovery, tokenization and fraud detection. I combine ML and analytics with KPI ownership, stakeholder alignment, and production delivery to improve authorization, recover revenue, and reduce fraud.
+Senior Data Scientist focused on payment optimization and fraud. I lead ML and analytics initiatives across routing, retries, authorization and fraud detection, from problem framing and prioritization through production rollout and evaluation.
 
 %-----------HIGHLIGHTS-----------
-\section{Highlights}
-\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt, partopsep=0pt]
-    \item Delivered a \textbf{4x} uplift in fallback routing success and \textbf{3x} increase in recovered revenue by analyzing PSP performance on NA traffic and redesigning a low-performing rerouting path.
-    \item Originated and scaled the \textbf{Dynamic Retries} ML solution from idea to production, improving in-scope retry success by \textbf{25--50\%} through KPI-led experimentation and rollout.
-    \item Rebuilt a production fraud ML model improving fraud recall from \textbf{${\sim}$44\% to ${\sim}$72\%} at the same \textbf{1\% false-positive rate} and increasing PR-AUC from \textbf{0.51 to 0.80}.
-    \item Drove cross-functional delivery with Product, Engineering, and Fraud Prevention from prioritization and KPI definition through rollout and evaluation.
-\end{itemize}
-\vspace{-2pt}
+%\section{Highlights}
+%\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt, partopsep=0pt]
+%    \item Delivered a \textbf{4x} uplift in fallback routing success and \textbf{3x} increase in recovered revenue by analyzing PSP performance on NA traffic and redesigning a low-performing rerouting path.
+%    \item Originated and scaled the \textbf{Dynamic Retries} ML solution from idea to production, improving in-scope retry success by \textbf{25--50\%} through KPI-led experimentation and rollout.
+%    \item Rebuilt a production fraud ML model improving fraud recall from \textbf{${\sim}$44\% to ${\sim}$72\%} at the same \textbf{1\% false-positive rate} and increasing PR-AUC from \textbf{0.51 to 0.80}.
+%    \item Drove cross-functional delivery with Product, Engineering, and Fraud Prevention from prioritization and KPI definition through rollout and evaluation.
+%\end{itemize}
+%\vspace{-2pt}
 
 %-----------SKILLS-----------
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Leadership \& Delivery}{: stakeholder management, cross-functional leadership, execution ownership, structured problem framing, mentoring junior data scientists} \\
+     \textbf{Leadership \& Delivery}{: stakeholder management, cross-functional leadership, execution ownership, structured problem framing, technical mentoring, technical interviewing} \\
      \textbf{Product \& Strategy}{: KPI definition, prioritization, decision memos / PRDs, rollout planning, launch evaluation, roadmap/backlog definition, experimentation design} \\
      \textbf{Payments \& Fraud}{: authorization/decline analysis, PSP performance, routing, retries, tokenization (network tokens), payment optimization, fraud detection} \\
-     \textbf{Programming \& ML/AI}{: Python, SQL, PySpark, classical ML, Deep Learning (CNNs, LSTMs), LLMs} \\
-     \textbf{Cloud \& Data}{: AWS, Azure, Data Vault 2.0, ETL development} \\
-     \textbf{Tools}{: Git, Docker, Airflow, FastAPI, Sagemaker, Databricks, TensorFlow, Keras}
+     \textbf{Programming & ML}{: Python, SQL, PySpark, classical ML, Deep Learning (CNNs, LSTMs)} \\
+     \textbf{Cloud \& Data}{: AWS, Azure, Glue, Athena, Lambda, Data Vault 2.0, ETL development} \\
+     \textbf{Tools}{: Git, Docker, Airflow, FastAPI, SageMaker, MWAA, Databricks, TensorFlow, Keras}
     }}
  \end{itemize}
 
@@ -127,25 +127,26 @@ Senior Data Scientist in payments and fraud with experience leading 0-to-1 ML an
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Senior Data Scientist, Payments}{April 2024 -- Present}
-      {Cleverbridge AG}{Cologne, DE}
-      \resumeItemListStart
-        \resumeItem{Lead payment optimization and fraud ML initiatives across routing, retries, authorization, tokenization, and fraud detection, owning work from opportunity discovery $\rightarrow$ decision memo $\rightarrow$ stakeholder alignment $\rightarrow$ rollout plan; defined KPIs and reviewed post-launch outcomes.}
-        \resumeItem{Improved fallback re-routing authorization success by \textbf{4x} (from 2--3\% to 11\%) by analyzing PSP performance on NA traffic and proposing a switch from a low-performing route to a higher-performing alternative; resulted in a \textbf{3x} increase in recovered revenue on that traffic slice.}
-        \resumeItem{Initiated and led the rebuild of a production fraud ML model that had not been retrained for two years; worked with Fraud Prevention to redesign the fraud-labelling logic, retrained and deployed the model, and improved offline fraud recall from \textbf{${\sim}$44\% to ${\sim}$72\%} at the same \textbf{1\% false-positive rate} (PR-AUC: \textbf{0.51 to 0.80}).
-        The evaluation benchmarked the existing model and an external vendor score, supporting a build-vs-buy decision.}
-        \resumeItem{Own the evolution of \textbf{Dynamic Retries} and use BIN-level, regional, PSP, and network-token performance analysis to prioritize additional routing and retry use cases.}
-        \resumeItem{Lead and mentor junior data scientists through problem framing, model development, experimentation design, and production analytics; raised quality via code reviews and structured feedback.}
-      \resumeItemListEnd
+    {Senior Data Scientist, Payments}{April 2024 -- Present}
+    {Cleverbridge AG -- Merchant of Record and e-commerce payments platform}{Cologne, DE}
+    \resumeItemListStart
+      \resumeItem{Lead payment optimization and fraud ML initiatives across routing, retries, authorization, tokenization and fraud detection, from opportunity discovery and prioritization through stakeholder alignment, rollout, KPI definition and evaluation.}
+      \resumeItem{Improved fallback re-routing authorization success by \textbf{4x} (from 2--3\% to 11\%) by identifying a weak route in North American traffic and driving the switch to a higher-performing PSP; resulted in a \textbf{3x} increase in recovered revenue on that traffic slice.}
+      \resumeItem{Rebuilt and deployed a production fraud ML model with Fraud Prevention, revising the labelling logic and improving offline recall from \textbf{${\sim}$44\% to ${\sim}$72\%} at a \textbf{1\% false-positive rate} (PR-AUC: \textbf{0.51 to 0.80}); benchmarked it against the existing model and an external vendor score for the build-vs-buy decision.}
+      \resumeItem{Expanded \textbf{Dynamic Retries} to approximately \textbf{90\% of the client base}, securing several hundred thousand euros in recovered revenue.}
+      \resumeItem{Designed and implemented monitoring for client-level product KPIs and model drift.}
+      \resumeItem{Lead and mentor junior data scientists and contribute to technical hiring for DS and DE roles.}
+
+    \resumeItemListEnd
 
     \resumeSubheading
       {Data Scientist}{December 2021 -- April 2024}
       {Cleverbridge AG}{Cologne, DE}
       \resumeItemListStart
-        \resumeItem{Originated and shipped \textbf{Dynamic Retries}, an ML-driven retry timing product; wrote the product proposal, aligned engineering, product, and business stakeholders, and led delivery from PoC $\rightarrow$ MVP $\rightarrow$ production rollout.}
+        \resumeItem{Proposed and launched \textbf{Dynamic Retries}, an ML-driven retry timing product; wrote the product proposal, aligned engineering, product, and business stakeholders, and led delivery from PoC through MVP to production rollout.}
         \resumeItem{Improved success rates for in-scope retries by \textbf{25--50\%}, owning KPI definition, measurement design, and iteration based on post-launch performance.}
         \resumeItem{Designed a hybrid retry strategy combining a rule-based scheduling heuristic (country/currency $\times$ day-of-month $\times$ hour-of-day) with ML timing optimization to select high-conversion retry windows.}
-        \resumeItem{Implemented and operated the solution on AWS (Python microservices, SageMaker, MWAA), including training/inference workflows and automation for reliable production runs.}
+        \resumeItem{Built reusable online and offline feature groups in AWS Glue and PySpark for rule-based retry strategies and ML training, and developed SageMaker pipelines for automated model training and inference.}
         \resumeItem{Designed the ML framework behind \textbf{CleverAutomations} and delivered churn-reduction models and automated workflows that identified at-risk customers and triggered targeted campaigns.}
       \resumeItemListEnd
 
@@ -155,17 +156,15 @@ Senior Data Scientist in payments and fraud with experience leading 0-to-1 ML an
       {Cleverbridge AG}{Cologne, DE}
       \resumeItemListStart
         \resumeItem{Led the design and implementation of a scalable data warehouse on Azure (Data Vault 2.0), enabling reliable reporting and self-service analytics across the company.}
-        \resumeItem{Built and optimized ETL pipelines (Azure Data Factory, Databricks, T-SQL) processing millions of records per day from multiple source systems.}
-        \resumeItem{Managed schema changes and migrations with Flyway, ensuring consistent, versioned deployments across environments.}
-        \resumeItem{Developed Python microservices and Airflow workflows for data products, containerized with Docker for resilient, maintainable operation.}
+        \resumeItem{Built and optimized ETL pipelines (Azure Data Factory, Databricks, T-SQL).}
+        \resumeItem{Developed Python microservices and Airflow workflows for production data products, using Docker and Flyway for maintainable services and versioned deployment.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Machine Learning Intern}{May 2017 -- July 2017}
       {KOSTAL Group}{Dortmund, DE}
       \resumeItemListStart
-        \resumeItem{Trained a gesture-recognition neural network using Keras and TensorFlow; achieved \textbf{80\%} validation accuracy on top-5 gestures using static image inputs with a CNN.}
-        \resumeItem{Improved model robustness through data preprocessing and augmentation.}
+        \resumeItem{Built a gesture-recognition CNN in Keras and TensorFlow, achieving \textbf{80\%} validation accuracy on the top five gestures and improving robustness through preprocessing and data augmentation.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -173,21 +172,7 @@ Senior Data Scientist in payments and fraud with experience leading 0-to-1 ML an
       {MegaFon}{Republic of Bashkortostan, Russia}
       \resumeItemListStart
         \resumeItem{Led the \textbf{network optimization team} of three engineers.}
-        \resumeItem{Reduced CS call drop rate in the 2G network by \textbf{0.2\%}.}
-        \resumeItem{Increased Inter-RAT handover success rate in the UMTS network by \textbf{0.8\%}, improving overall network performance.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------
-\section{Projects}
-  \resumeSubHeadingListStart
-
-    \resumeProjectHeading
-      {\textbf{Object Detection in Fine Art Paintings (MSc Thesis)} $|$ \emph{Python, Deep Learning, CNN}}{2017 -- 2018}
-      \resumeItemListStart
-        \resumeItem{Developed a custom CNN-based approach for object detection in fine art paintings, improving detection accuracy by \textbf{18\%} over existing methods.}
-        \resumeItem{Built the training and evaluation workflow and performed systematic error analysis to iterate on model design.}
+        \resumeItem{Reduced CS call drop rate in the 2G network by \textbf{0.2\%} and increased UMTS Inter-RAT handover success rate by \textbf{0.8\%}.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -229,15 +214,6 @@ Senior Data Scientist in payments and fraud with experience leading 0-to-1 ML an
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
       Russian (Native) $|$ English (Fluent) $|$ German (Upper Intermediate, B2)
-    }}
- \end{itemize}
-
-%-----------ADDITIONAL INFORMATION-----------
-\section{Additional Information}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-      \textbf{Volunteer}: Bashkortostan branch of the Russian Union of Young Scientists. \\
-      \textbf{Awards}: Appreciation letter from the CEO of the Republic of Bashkortostan branch of PJSC ``MegaFon'' for outstanding performance.
     }}
  \end{itemize}
 
